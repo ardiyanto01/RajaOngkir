@@ -1,0 +1,139 @@
+{
+	"id": "a5509c2c-e26a-427f-86aa-9e0fc79a3215",
+	"name": "Bca only",
+	"timestamp": "2023-05-03T10:43:17.133Z",
+	"collection_id": "23306556-c7d16633-beaf-4a5d-be08-6d874c9644dc",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-05-03T10:43:14.165Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "abbe37d5-e785-424d-967d-73fcb2b9eab4",
+			"name": "List Province",
+			"url": "https://api.rajaongkir.com/starter/province",
+			"time": 344,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				344
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "7c6943d0-d02c-48e7-a852-412ff2a7db3b",
+			"name": "List Kota",
+			"url": "https://api.rajaongkir.com/starter/city?province=9",
+			"time": 337,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true,
+				"Berhasi get data user": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Berhasi get data user": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				337
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true,
+					"Berhasi get data user": true
+				}
+			]
+		},
+		{
+			"id": "4fd487ef-9ce3-4e90-aff0-b7d8af38bef5",
+			"name": "chek harga ongkir",
+			"url": "https://api.rajaongkir.com/starter/cost",
+			"time": 469,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				469
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1150,
+	"collection": {
+		"requests": [
+			{
+				"id": "abbe37d5-e785-424d-967d-73fcb2b9eab4",
+				"method": "GET"
+			},
+			{
+				"id": "7c6943d0-d02c-48e7-a852-412ff2a7db3b",
+				"method": "GET"
+			},
+			{
+				"id": "4fd487ef-9ce3-4e90-aff0-b7d8af38bef5",
+				"method": "POST"
+			}
+		]
+	}
+}
